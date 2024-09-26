@@ -17,7 +17,7 @@ int main()
        
     change = money / dollar;
     std::cout << "Your change is :"<< change<<" dollars\n";
-        int x = money % dollar; // gets the remainder.
+        int x = money % dollar; // gets the remainder.v
 
         change = x / quarters;
         std::cout << "Your change is :" << change << " quarters\n";

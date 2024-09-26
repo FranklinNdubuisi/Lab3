@@ -1,13 +1,18 @@
 #include <iostream>
 int main() {
 
-	int x = 1;
-	int y = 2;
+	int x;
+	int y;
+	std::cout << "Enter a value for X: ";
+	std::cin >> x;
 
-	int *z = &x;
-	int *w = &y;
+	std::cout << "Enter a value for Y: ";
+	std::cin >> y;
 
-	int add = *z + *w;
+	int *z = &x; //serves as a pointer to x;
+	int *w = &y; //serves as a pointer to y;
+
+	int add = *z + *w; //adds the two values using their pointer;
 
 	std::cout << "x is :  " << x<<'\n';
 	std::cout << " y is : " << y << '\n';

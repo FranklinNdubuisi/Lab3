@@ -3,7 +3,7 @@
 int main() {
 
 	int a =5;
-	int *y = &a;
+	int *y = &a; // pointer to a ;
 
 	typedef int* VEC;
 	VEC v = &a;
@@ -11,9 +11,9 @@ int main() {
 	typedef VEC* MATRIX;
 	MATRIX m = &v;
 
-	std::cout << " The value of a is : " << a;
-	std::cout << " The value of a is : " << v;
-	std::cout << " The value of a is : " << m;
+	std::cout << " The value of a is : " << a <<"\n";
+	std::cout << " The value of a is : " << *v<<"\n";
+	std::cout << " The value of a is : " << **m<<"\n";
 
 	return 0;
 
